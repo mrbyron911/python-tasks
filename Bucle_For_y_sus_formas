@@ -1,0 +1,75 @@
+print("\nIterando sobre una lista:")
+lista = [1, 2, 3, 4, 5]
+for elemento in lista:
+    print(elemento)
+#||||||||||||||||||||||||||||||||||||
+print("\nIterando sobre una cadena de texto:")
+
+#Iterando sobre una cadena de texto:
+cadena = "Hola"
+for caracter in cadena:
+    print(caracter)
+#||||||||||||||||||||||||||||||||||||
+print("\nIterando sobre una lista de tuplas:")
+
+lista_de_tuplas = [(1, 'a'), (2, 'b'), (3, 'c')]
+for numero, letra in lista_de_tuplas:
+    print(numero, letra)
+#||||||||||||||||||||||||||||||||||||
+print("\nIterando sobre un diccionario:")
+
+diccionario = {'a': 1, 'b': 2, 'c': 3}
+for clave, valor in diccionario.items():
+    print(clave, valor)
+#||||||||||||||||||||||||||||||||||||
+print("\nIterando sobre una secuencia generada por enumerate:")
+
+lista = ['a', 'b', 'c']
+for indice, valor in enumerate(lista):
+    print(indice, valor)
+#||||||||||||||||||||||||||||||||||||
+print("\nIterando sobre múltiples secuencias con zip:")
+
+nombres = ['Alice', 'Bob', 'Charlie']
+edades = [25, 30, 35]
+for nombre, edad in zip(nombres, edades):
+    print(nombre, edad)
+
+
+#||||||||||||||||||||||||||||||||||||
+print("\nIterando en reversa con reversed:")
+
+lista = [1, 2, 3, 4, 5]
+for elemento in reversed(lista):
+    print(elemento)
+#||||||||||||||||||||||||||||||||||||
+print("\nEjemplo usando funciones de manipulación de cadenas:")
+
+print("\nConvertir a MAYUSCULAS: manzana", "plátano", "uva", "naranja")
+frutas = ["manzana", "plátano", "uva", "naranja"]
+
+# Convertir cada fruta a mayúsculas
+for fruta in frutas:
+    fruta_mayuscula = fruta.upper()
+    print(fruta_mayuscula)
+
+# Convertir la primera letra de cada fruta a mayúscula
+print("\nConvertir primera letra en Mayúscula: manzana", "plátano", "uva", "naranja")
+
+for fruta in frutas:
+    fruta_capitalizada = fruta.capitalize()
+    print(fruta_capitalizada)
+
+# Eliminar los espacios en blanco al principio y al final de cada fruta
+print("\nEliminar los espacios en blanco de:")
+print("  Juan", "María  ", "  Pedro  ")
+nombres = ["  Juan", "María  ", "  Pedro  "]
+for nombre in nombres:
+    nombre_sin_espacios = nombre.strip()
+    print(nombre_sin_espacios)
+
+# Dividir cada fruta en una lista de letras
+print("Dividir cada fruta en una lista de letras")
+for fruta in frutas:
+    letras = list(fruta)
+    print(letras)
